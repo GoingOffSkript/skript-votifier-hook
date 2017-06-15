@@ -63,8 +63,9 @@ on vote:
 on votifier vote:
 
     broadcast "&9Recieved a vote."
-    broadcast "&7-&f %username of event-vote%"
-    broadcast "&7-&f %server list of event-vote%"
-    broadcast "&7-&f %ip address of event-vote%"
-    broadcast "&7-&f %timestamp of event-vote%"
+    broadcast "&7-&f Username: %username of event-vote%"
+    broadcast "&7-&f Website: %server list of event-vote%"
+    broadcast "&7-&f Address: %ip address of event-vote%"
+    broadcast "&7-&f Timestamp: %timestamp of event-vote%"
 ```
+![](http://i.imgur.com/uQLR6Fn.png)
