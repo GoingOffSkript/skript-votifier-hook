@@ -1,0 +1,5 @@
+main: com.rezzedup.skriptvotifierhook.SkriptVotifierHook
+name: ${project.artifactId}
+version: ${project.version}
+author: RezzedUp
+depend: [Skript, Votifier]
