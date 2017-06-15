@@ -62,10 +62,9 @@ on vote:
 # The voter may or may not be online...
 on votifier vote:
 
-    broadcast "&9Recieved a vote."
+    broadcast "&9Received a vote."
     broadcast "&7-&f Username: %username of event-vote%"
     broadcast "&7-&f Website: %server list of event-vote%"
     broadcast "&7-&f Address: %ip address of event-vote%"
     broadcast "&7-&f Timestamp: %timestamp of event-vote%"
 ```
-![](http://i.imgur.com/uQLR6Fn.png)
