@@ -8,9 +8,9 @@ This [Skript](https://github.com/bensku/Skript) addon requires:
 
 ## Events
 
-### Vote Recieved Event
+### Vote Receive Event
 
-Called every time votifier recieves a vote.
+Called every time votifier receives a vote.
 
 `on [(any|every|raw)] [votifier] vote receiv(e|ed)`
 
