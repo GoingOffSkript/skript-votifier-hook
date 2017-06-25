@@ -5,7 +5,7 @@ import com.vexsoftware.votifier.model.Vote;
 
 public class VoterUsernameExpression extends SimplePropertyExpression<Vote, String>
 {
-    public static final String PATTERN = "[voter] user[(-| )]name";
+    public static final String PATTERN = "[(voter|sender)] user[(-| )]name";
     
     static 
     {

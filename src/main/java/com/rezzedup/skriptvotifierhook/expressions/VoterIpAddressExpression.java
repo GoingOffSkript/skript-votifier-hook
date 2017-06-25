@@ -5,7 +5,7 @@ import com.vexsoftware.votifier.model.Vote;
 
 public class VoterIpAddressExpression extends SimplePropertyExpression<Vote, String>
 {
-    public static final String PATTERN = "[received] [(voter|sender)] [ip(-| )]address";
+    public static final String PATTERN = "[(voter|sender)] [ip(-| )]address";
     
     static 
     {

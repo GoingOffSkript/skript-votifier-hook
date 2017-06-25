@@ -5,7 +5,7 @@ import com.vexsoftware.votifier.model.Vote;
 
 public class VoteTimestampExpression extends SimplePropertyExpression<Vote, String>
 {
-    public static final String PATTERN = "[received] [voter] time[(-| )]stamp";
+    public static final String PATTERN = "[(voter|sender)] time[(-| )]stamp";
     
     static 
     {
