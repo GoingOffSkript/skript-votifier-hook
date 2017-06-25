@@ -1,16 +1,20 @@
 # skript-votifier-hook
 
-It does what it says! This addon adds the following syntaxes:
+It does what it says! 
+
+This [Skript](https://github.com/bensku/Skript) addon requires:
+* Votifier (obviously)
+* Java 8
 
 ## Events
 
 ### Vote Recieved Event
 
-Called when votifier recieves any vote.
+Called every time votifier recieves a vote.
 
-`[raw] [votifier] vote receiv(e|ed)`
+`on [(any|every|raw)] [votifier] vote receiv(e|ed)`
 
-`[raw] votifier vote`
+`on [(any|every|raw)] votifier vote`
 
 This event has access to: `event-vote`
 
@@ -18,7 +22,7 @@ This event has access to: `event-vote`
 
 Called when an online player votes for the server.
 
-`[online] [player] vote`
+`on [online] [player] vote`
 
 This event has access to: `event-player` and `event-vote`
 
@@ -28,27 +32,27 @@ All of the available expressions from this addon are properties of **event-vote*
 
 ### Vote Website
 
-The website where the vote was cast.
+The server list name from where the vote was cast.
 
 `([web]site|server[ ]list|service) [name] of event-vote`
 
 ### Voter Username
 
-The submitted username of the voter.
+The voter's submitted username.
 
-`[voter] user[(-| )]name of event-vote`
+`[(voter|sender)] user[(-| )]name of event-vote`
 
 ### Voter IP Address
 
-The IP the voter used while submitting their vote.
+The IP address used when the voter submitted their vote.
 
-`[received] [(voter|sender)] [ip(-| )]address of event-vote`
+`[(voter|sender)] [ip(-| )]address of event-vote`
 
 ### Vote Timestamp
 
-The timestamp when the vote was cast.
+The timestamp from when the vote was cast.
 
-`[received] [voter] time[(-| )]stamp of event-vote`
+`[(voter|sender)] time[(-| )]stamp of event-vote`
 
 ## Example Script
 
@@ -62,9 +66,9 @@ on vote:
 # The voter may or may not be online...
 on votifier vote:
 
-    broadcast "&9Received a vote."
-    broadcast "&7-&f Username: %username of event-vote%"
-    broadcast "&7-&f Website: %server list of event-vote%"
-    broadcast "&7-&f Address: %ip address of event-vote%"
-    broadcast "&7-&f Timestamp: %timestamp of event-vote%"
+    send "&9Received a vote." to console
+    send "&7-&f Username: %username of event-vote%" to console
+    send "&7-&f Website: %server list of event-vote%" to console
+    send "&7-&f Address: %ip address of event-vote%" to console
+    send "&7-&f Timestamp: %timestamp of event-vote%" to console
 ```
